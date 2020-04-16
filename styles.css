@@ -3,77 +3,73 @@ h1 {
     font-family: 'Roboto', sans-serif;
     font-size: 48px;
 }
+h2 {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 36px;
+}
 .game-image {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 25%;
+    width: 20%;
 }
 .rock-button-container {
-    position: relative;
-    width: 50%;
+    float:left;
+    width: 33.33%;
 }
 .rock-button-container img {
-    width: 100%;
+    width: 95%;
     height: auto;
+    border: 5px solid rgb(100,100,100);
 }
 .rock-button {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
+    float:left;
     background-color: #555;
     color: white;
     font-size: 16px;
-    padding: 12px 24px;
     border: none;
-    cursor: pointer;
     border-radius: 5px;
 }
 
 .paper-button-container {
-    position: relative;
-    width: 50%;
+    float: left;
+    width: 33.33%;
 }
 .paper-button-container img {
-    width: 100%;
+    width: 95%;
     height: auto;
+    border: 5px solid rgb(100,100,100);
 }
 .paper-button {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
+    float:left;
     background-color: #555;
     color: white;
     font-size: 16px;
-    padding: 12px 24px;
     border: none;
-    cursor: pointer;
     border-radius: 5px;
 }
 
 .scissors-button-container {
-    position: relative;
-    width: 50%;
+    float: left;
+    width: 33.33%;
 }
 .scissors-button-container img {
-    width: 100%;
+    width: 95%;
     height: auto;
+    border: 5px solid rgb(100,100,100);
 }
 .scissors-button {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
+    float:left;
     background-color: #555;
     color: white;
     font-size: 16px;
-    padding: 12px 24px;
     border: none;
-    cursor: pointer;
     border-radius: 5px;
+}
+.results-container {
+    text-align: center;
+    font-style: "Roboto, sans-serif";
+    font-size: 16px;
+    border: 5px solid rgb(100,100,100);
 }

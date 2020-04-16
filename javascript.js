@@ -16,11 +16,9 @@ function computerChoice() {
     } else return "Error: something is funky. Try again.";
 }
 
-
-
 function playerChoice(playerSelection) {
 
-    playerSelection = prompt("Let's play Rock, Paper, Scissors!  What's your choice?");
+//    playerSelection = prompt("Let's play Rock, Paper, Scissors!  What's your choice?");
     if (playerSelection.toLowerCase() == "rock" || playerSelection.toLowerCase() == "paper" || playerSelection.toLowerCase() == "scissors") {
         console.log("You chose " + playerSelection) + ".";
         document.write("You chose " + playerSelection + ".");
@@ -29,7 +27,6 @@ function playerChoice(playerSelection) {
 }
 
 function playRound(playerSelection, computerSelection) {
-    computerSelection = computerChoice();
     if (playerSelection == computerSelection) {
         console.log("It's a tie! You both picked " + computerSelection + ".");
     } else if (playerSelection == "rock" && computerSelection == "scissors") {
@@ -53,8 +50,36 @@ function playRound(playerSelection, computerSelection) {
     }
 }
 
-playRound(playerChoice(), computerChoice());
-//const btn = document.querySelector('#rock');
-//document.getElementById("button").btn.addEventListener('click', function (e)  {
-//    playRound(playerSelection('rock'), computerChoice());
+//playRound(playerChoice(), computerChoice());
+//const rockbtn = document.querySelector('.rock-button');
+const rockbtnimg = document.querySelector('.rockbtnimg');
+
+//rockbtn.addEventListener('click', function (e) {
+//    playRound("rock", computerChoice());
 //});
+
+rockbtnimg.addEventListener('click', function (e) {
+    playRound("rock", computerChoice());
+});
+
+//const paperbtn = document.querySelector('.paper-button');
+const paperbtnimg = document.querySelector('.paperbtnimg');
+
+//paperbtn.addEventListener('click', function (e) {
+//    playRound("paper", computerChoice());
+//});
+
+paperbtnimg.addEventListener('click', function (e) {
+    playRound("paper", computerChoice());
+});
+
+//const scissorsbtn = document.querySelector('.scissors-button');
+const scissorsbtnimg = document.querySelector('.scissorsbtnimg');
+
+//scissorsbtn.addEventListener('click', function (e) {
+ //   playRound("scissors", computerChoice());
+//});
+
+scissorsbtnimg.addEventListener('click', function (e) {
+    playRound("scissors", computerChoice());
+});
