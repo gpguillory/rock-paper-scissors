@@ -15,8 +15,8 @@ h2 {
     width: 20%;
 }
 .rock-button-container {
-    float:left;
-    width: 33.33%;
+    
+    width: 100%;
 }
 .rock-button-container img {
     width: 95%;
@@ -33,8 +33,8 @@ h2 {
 }
 
 .paper-button-container {
-    float: left;
-    width: 33.33%;
+    
+    width: 100%;
 }
 .paper-button-container img {
     width: 95%;
@@ -51,8 +51,8 @@ h2 {
 }
 
 .scissors-button-container {
-    float: left;
-    width: 33.33%;
+    
+    width: 100%;
 }
 .scissors-button-container img {
     width: 95%;
@@ -69,7 +69,10 @@ h2 {
 }
 .results-container {
     text-align: center;
-    font-style: "Roboto, sans-serif";
-    font-size: 16px;
-    border: 5px solid rgb(100,100,100);
+    border: 3px solid rgb(100,100,100);
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+}
+.all-buttons-container {
+    column-count: 3;
 }
